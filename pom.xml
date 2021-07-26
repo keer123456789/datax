@@ -103,6 +103,7 @@
 <!--        <module>hbase20xsqlreader</module>-->
 <!--        <module>hbase20xsqlwriter</module>-->
         <module>hivejdbcreader</module>
+        <module>hivejdbcwriter</module>
     </modules>
 
     <dependencyManagement>
