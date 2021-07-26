@@ -56,7 +56,7 @@
         <module>otsreader</module>
         <module>otsstreamreader</module>
         <module>txtfilereader</module>
-<!--        <module>hdfsreader</module>-->
+        <module>hdfsreader</module>
         <module>streamreader</module>
         <module>ossreader</module>
         <module>ftpreader</module>
@@ -64,10 +64,10 @@
         <module>rdbmsreader</module>
 <!--        <module>hbase11xreader</module>-->
 <!--        <module>hbase094xreader</module>-->
-<!--        <module>tsdbreader</module>-->
-<!--        <module>opentsdbreader</module>-->
-<!--        <module>cassandrareader</module>-->
-<!--        <module>gdbreader</module>-->
+        <module>tsdbreader</module>
+        <module>opentsdbreader</module>
+        <module>cassandrareader</module>
+        <module>gdbreader</module>
 
 
         <!-- writer -->
@@ -76,32 +76,33 @@
         <module>odpswriter</module>
         <module>txtfilewriter</module>
         <module>ftpwriter</module>
-<!--        <module>hdfswriter</module>-->
+        <module>hdfswriter</module>
         <module>streamwriter</module>
         <module>otswriter</module>
         <module>oraclewriter</module>
         <module>sqlserverwriter</module>
         <module>postgresqlwriter</module>
         <module>osswriter</module>
-<!--        <module>mongodbwriter</module>-->
-<!--        <module>adswriter</module>-->
-<!--        <module>ocswriter</module>-->
-<!--        <module>rdbmswriter</module>-->
+        <module>mongodbwriter</module>
+        <module>adswriter</module>
+        <module>ocswriter</module>
+        <module>rdbmswriter</module>
 <!--        <module>hbase11xwriter</module>-->
 <!--        <module>hbase094xwriter</module>-->
 <!--        <module>hbase11xsqlwriter</module>-->
 <!--        <module>hbase11xsqlreader</module>-->
-<!--        <module>elasticsearchwriter</module>-->
-<!--        <module>tsdbwriter</module>-->
-<!--        <module>adbpgwriter</module>-->
-<!--        <module>gdbwriter</module>-->
-<!--        <module>cassandrawriter</module>-->
+        <module>elasticsearchwriter</module>
+        <module>tsdbwriter</module>
+        <module>adbpgwriter</module>
+        <module>gdbwriter</module>
+        <module>cassandrawriter</module>
 <!--        <module>clickhousewriter</module>-->
         <!-- common support module -->
         <module>plugin-rdbms-util</module>
         <module>plugin-unstructured-storage-util</module>
 <!--        <module>hbase20xsqlreader</module>-->
 <!--        <module>hbase20xsqlwriter</module>-->
+        <module>hivejdbcreader</module>
     </modules>
 
     <dependencyManagement>
@@ -116,11 +117,11 @@
                 <artifactId>fastjson</artifactId>
                 <version>${fastjson-version}</version>
             </dependency>
-            <!--<dependency>
+            <dependency>
                 <groupId>com.google.guava</groupId>
                 <artifactId>guava</artifactId>
                 <version>${guava-version}</version>
-            </dependency>-->
+            </dependency>
             <dependency>
                 <groupId>commons-io</groupId>
                 <artifactId>commons-io</artifactId>

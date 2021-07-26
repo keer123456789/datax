@@ -20,8 +20,8 @@ public enum DataBaseType {
     DB2("db2", "com.ibm.db2.jcc.DB2Driver"),
     ADS("ads","com.mysql.jdbc.Driver"),
     ClickHouse("clickhouse", "ru.yandex.clickhouse.ClickHouseDriver"),
-    ODPS("odps","com.aliyun.odps.jdbc.OdpsDriver");
-
+    ODPS("odps","com.aliyun.odps.jdbc.OdpsDriver"),
+    HIVE("hive","org.apache.hive.jdbc.HiveDriver");
 
     private String typeName;
     private String driverClassName;
@@ -61,6 +61,8 @@ public enum DataBaseType {
             case RDBMS:
                 break;
             case ODPS:
+                break;
+            case HIVE:
                 break;
             default:
                 throw DataXException.asDataXException(DBUtilErrorCode.UNSUPPORTED_TYPE, "unsupported database type.");
@@ -103,6 +105,8 @@ public enum DataBaseType {
                 break;
             case ODPS:
                 break;
+            case HIVE:
+                break;
             default:
                 throw DataXException.asDataXException(DBUtilErrorCode.UNSUPPORTED_TYPE, "unsupported database type.");
         }
@@ -130,6 +134,8 @@ public enum DataBaseType {
             	break;
             case ODPS:
                 break;
+            case HIVE:
+                break;
             default:
                 throw DataXException.asDataXException(DBUtilErrorCode.UNSUPPORTED_TYPE, "unsupported database type.");
         }
@@ -155,6 +161,8 @@ public enum DataBaseType {
                 break;
             case ODPS:
                 break;
+            case HIVE:
+                break;
             default:
                 throw DataXException.asDataXException(DBUtilErrorCode.UNSUPPORTED_TYPE, "unsupported database type");
         }
@@ -178,6 +186,8 @@ public enum DataBaseType {
             case PostgreSQL:
                 break;
             case ODPS:
+                break;
+            case HIVE:
                 break;
             default:
                 throw DataXException.asDataXException(DBUtilErrorCode.UNSUPPORTED_TYPE, "unsupported database type");
